@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pre</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="page-header">
+        <div class="page-header__logo">Logo</div>
+        <ul class="page-header__nav page-nav">
+          <li class="page-nav__item">
+            <button class="page-nav__btn" data-section="order">Заказ</button>
+          </li>
+          <li class="page-nav__item">
+            <button class="page-nav__btn" data-section="portfolio">
+              портфолио
+            </button>
+          </li>
+          <li class="page-nav__item">
+            <button class="page-nav__btn" data-section="about">О себе</button>
+          </li>
+          <li class="page-nav__item">
+            <button class="page-nav__btn" data-section="news">новости</button>
+          </li>
+        </ul>
+      </header>
+      <video
+        class="video"
+        src="./videoplayback.mp4"
+        poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
+        muted
+        autoplay
+        loop
+        preload="auto"
+      ></video>
+      <main class="page-content">
+        <section data-section="order" class="page-content__section">
+          <h2>Заказ</h2>
+        </section>
+
+        <section data-section="portfolio" class="page-content__section">
+          <h2>портфолио</h2>
+        </section>
+
+        <section data-section="about" class="page-content__section">
+          <h2>О себе</h2>
+        </section>
+
+        <section data-section="news" class="page-content__section">
+          <h2>новости</h2>
+        </section>
+      </main>
+    </div>
+
+    <script src="./js/show-content.js" type="module"></script>
+  </body>
+</html>
